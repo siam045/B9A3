@@ -4,15 +4,149 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hockey Game</title>
-  <style>
-     
-  </style>
-</head>
-<body>
-  <header>
+  <!--font Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<!--font awesome cdn-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
+  <!-- daisyUI and tailwind-->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+  <header class="px-32 pt-14" >
+    <div class="navbar">
+      <div class="navbar-start">
+          
+        <h1 class="text-4xl font-bold text-gray-700">Hockey<span class="text-red-400">'</span>s</h1>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a><span class="text-red-400">Home</span></a></li>
+          <li><a>About</a></li>
+          <li><a>Pages</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+      <div class="justify-between ml-56">
+        <span class="material-symbols-outlined">
+          search
+          </span>
+      <div class="navbar-end">
+        <a class="btn text-white bg-red-500 border-none font-semibold text-xl">Button</a>
+      </div>
+    </div>
+    </div>
   </header>
   <main>
+    <section class="px-32 pt-14 h-auto">
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="./Images/1.png" class="w-full" />
+          <div class="absolute  transform -translate-y-1/2 left-5 right-6 top-3/4">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="rounded-2xl w-full" />
+          <div class="absolute transform -translate-y-1/2 left-5 right-6 top-3/4">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class=" rounded-2xl w-full" />
+          <div class="absolute transform -translate-y-1/2 left-5 right-6 top-3/4">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+      </div>
+    </section>
+    <section class="px-32">
+      <div class="hero min-h-screen bg-white">
+        <div class="hero-content text-center">
+          <div class="max-w-md">
+            <h1 class="text-4xl font-bold text-gray-700">Professional Hockeys Club</h1>
+            <p class="py-6 text-gray-400">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p> 
+          </div>
+        </div>
+      </div>
+      <!--radial progress-->
+      <div class="radial-container flex justify-around  w-full">
+        <div class="text-center h-52">
+          <div class="radial-progress  text-red-500" style="--value:87;" role="progressbar"><span class="font-bold text-black">87%</span></div>
+          <h4 class="text-gray-900 mt-6 text-xl font-semibold">Annadale Hockey Club</h4>
+          <p class="text-gray-400 mt-4 text-xs font-normal">The club started life as Annadale <br> Grammar School Former Pupils in 1968.</p>
+        </div>
+        <div class=" text-center h-52">
+          <div class="radial-progress  text-green-400" style="--value:75;" role="progressbar"><span class="font-bold text-black">75%</span></div>
+          <h4 class="text-gray-900 mt-6 text-xl font-semibold">Bolton Hockey Club</h4>
+          <p class="text-gray-400 mt-4 text-xs font-normal">It has over 180 members of which <br>approximately 140 are playing members..</p>
+        </div>
+        <div class="text-center h-52">
+          <div class="radial-progress  text-orange-500" style="--value:93;" role="progressbar"><span class="font-bold text-black">93%</span></div>
+          <h4 class="text-gray-900 mt-6 text-xl font-semibold">Duchy Hockey Club</h4>
+          <p class="text-gray-400 mt-4 text-xs font-normal">Duchy HC was formed in 2009 <br> by a group of local hockey</p>
+        </div>
+        <div class="text-center h-52">
+          <div class="radial-progress  text-blue-500" style="--value:81;" role="progressbar"><span class="font-bold text-black">81%</span></div>
+          <h4 class="text-gray-900 mt-6 text-xl font-semibold">Mossley Hockey Club</h4>
+          <p class="text-gray-400 mt-4 text-xs font-normal">During the 1930s the Club enjoyed <br> great success in the Intermediate and Junior League</p>
+        </div>
+      </div> 
+    </section>
+    <!--program section-->
+    <section>
+      <div class="hero min-h-screen bg-white">
+        <div class="hero-content text-center">
+          <div class="max-w-md">
+            <h1 class="text-4xl font-bold text-gray-700">Program Sections</h1>
+            <p class="py-6 text-gray-400">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+          </div>
+        </div>
+      </div>
+      <!--program section images-->
+      <div class="program-section-images grid-cols-2 flex gap-6 px-32 pb-7">
+        <div class="card bg-base-100 shadow-xl image-full">
+          <figure><img src="./Images/2.png" alt="" /></figure>
+          <div class="card-body">
+            <h2 class="card-title text-white text-3xl font-bold  pt-28">MITES ON ICE</h2>
+            <p class="pt-10 text-white font-medium ">Skate on the ice at Capital One Arena during intermission! Click to learn more about Mites on Ice, presented by Delta Dental.</p>
+            <div class="card-actions mt-6">
+              <button class="btn px-5 py-2 bg-red-400 text-white font-bold border-none">Register Now!</button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl image-full">
+          <figure><img src="./Images/3.png" alt="" /></figure>
+          <div class="card-body">
+            <h2 class="card-title text-white text-3xl font-bold  pt-28">COLLEGE HOCKEY</h2>
+            <p class="pt-10 text-white font-medium">Learn more about the College Hockey Combine & Fair for rising 8th-12th graders!</p>
+            <div class="card-actions mt-6">
+              <button class="btn px-5 py-2 bg-red-400 text-white font-bold border-none">Register Now!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="mx-32 justify-around">
+          <div class="card bg-base-100 row-span-2 shadow-xl image-full">
+            <figure><img src="./Images/4.png" alt="" /></figure>
+            <div class="card-body ">
+              <h2 class="card-title text-white text-3xl font-bold  pt-40">SUNDAY SUMMER SKILLS</h2>
+              <p class="pt-10 text-white font-medium">Keep your skills fresh this summer with our Sunday Summer Skills Clinic Series! Registration open now!</p>
+              <div class="card-actions">
+                <button class="btn px-5 py-2 bg-red-400 text-white font-bold border-none">Register Now!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    </section>
 
   </main>
   <footer>
