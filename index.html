@@ -16,14 +16,17 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<!--body start-->
 <body class="bg-white">
-  <header class="px-32 pt-14" >
-    <div class="navbar">
+  <header class="lg:px-32 px-4 pt-14" >
+    <div class="navbar justify-around">
       <div class="navbar-start">
-          
+        <div class="pr-5 ">
+          <i class="fa-solid hidden fa-bars"></i>
+        </div>
         <h1 class="text-4xl font-bold text-gray-700">Hockey<span class="text-red-400">'</span>s</h1>
       </div>
-      <div class="navbar-center hidden lg:flex">
+      <div class="navbar-center lg:flex">
         <ul class="menu menu-horizontal px-1">
           <li><a><span class="text-red-400">Home</span></a></li>
           <li><a>About</a></li>
@@ -32,8 +35,8 @@
           <li><a>Contact</a></li>
         </ul>
       </div>
-      <div class="justify-between ml-56">
-        <span class="material-symbols-outlined">
+      <div class="justify-between lg:ml-56">
+        <span class="material-symbols-outlined hidden">
           search
           </span>
       <div class="navbar-end">
@@ -43,11 +46,11 @@
     </div>
   </header>
   <main>
-    <section class="px-32 pt-14 h-auto">
+    <section class="lg:px-32 px-4 pt-14 h-auto">
       <div class="carousel w-full">
         <div id="slide1" class="carousel-item relative w-full">
           <img src="./Images/1.png" class="w-full" />
-          <div class="bg-black w-[520px] p-8 gap-4 h-36 rounded-2xl text-start absolute top-2/3 left-[50%]">
+          <div class="bg-black lg:w-[520px]  p-8 gap-4 h-48 lg:h-36 rounded-2xl text-start absolute top-[100%] lg:top-2/3 lg:left-[50%]">
             <h3 class="text-white text-2xl font-semibold">Meet all the heroes from the field</h3>
             <p>This is where legends are made – with the world’s finest players battling it out to become the very best.</p>
           </div>
@@ -58,7 +61,7 @@
         </div> 
         <div id="slide2" class="carousel-item relative w-full">
           <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="rounded-2xl w-full" />
-          <div class="bg-black w-[520px] p-8 gap-4 h-36 rounded-2xl text-start absolute top-2/3 left-[50%]">
+          <div class="bg-black lg:w-[520px]  p-8 gap-4 h-48 lg:h-36 rounded-2xl text-start absolute top-[100%] lg:top-2/3 lg:left-[50%]">
             <h3 class="text-white text-2xl font-semibold">Meet all the heroes from the field</h3>
             <p>This is where legends are made – with the world’s finest players battling it out to become the very best.</p>
           </div>
@@ -69,7 +72,7 @@
         </div> 
         <div id="slide3" class="carousel-item relative w-full">
           <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class=" rounded-2xl w-full" />
-          <div class="bg-black w-[520px] p-8 gap-4 h-36 rounded-2xl text-start absolute top-2/3 left-[50%]">
+          <div class="bg-black lg:w-[520px]  p-8 gap-4 h-48 lg:h-36 rounded-2xl text-start absolute top-[100%] lg:top-2/3 lg:left-[50%]">
             <h3 class="text-white text-2xl font-semibold">Meet all the heroes from the field</h3>
             <p>This is where legends are made – with the world’s finest players battling it out to become the very best.</p>
           </div>
@@ -80,8 +83,8 @@
         </div> 
       </div>
     </section>
-    <section class="px-32">
-      <div class="hero mt-24 bg-white">
+    <section class="lg:px-32 px-4">
+      <div class="hero lg:mt-24 bg-white">
         <div class="hero-content text-center">
           <div class="max-w-md">
             <h1 class="text-4xl font-bold text-gray-700">Professional Hockeys Club</h1>
@@ -90,7 +93,7 @@
         </div>
       </div>
       <!--radial progress-->
-      <div class="radial-container flex justify-around  w-full">
+      <div class="radial-container lg:flex justify-around  w-full">
         <div class="text-center h-52">
           <div class="radial-progress  text-red-500" style="--value:87;" role="progressbar"><span class="font-bold text-black">87%</span></div>
           <h4 class="text-gray-900 mt-6 text-xl font-semibold">Annadale Hockey Club</h4>
@@ -124,8 +127,8 @@
         </div>
       </div>
       <!--program section images-->
-      <div class="program-section-images grid-cols-2 flex gap-6 px-32 pb-7">
-        <div class="card bg-base-100 flex-1 shadow-xl image-full">
+      <div class="program-section-images lg:grid-cols-2  mx-4 space-y-4 lg:flex gap-6 lg:px-32 pb-7">
+        <div class="card bg-base-100 flex-1 shadow-xl  image-full">
           <figure><img src="./Images/2.png" alt="" /></figure>
           <div class="card-body">
             <h2 class="card-title text-white text-3xl font-bold  pt-28">MITES ON ICE</h2>
@@ -146,7 +149,7 @@
           </div>
         </div>
       </div>
-        <div class="mx-32 justify-around">
+        <div class="lg:mx-32 mx-4 justify-around">
           <div class="card bg-base-100 row-span-2 shadow-xl image-full">
             <figure><img src="./Images/4.png" alt="" /></figure>
             <div class="card-body ">
@@ -170,12 +173,12 @@
       </div>
     </section>
     <!--Gift List-->
-    <section class="px-32">
+    <section class="lg:px-32 px-4">
       <div >
-      <div class="grid justify-between w-full grid-cols-2 gap-6">
+      <div class="grid justify-between w-full lg:grid-cols-2 gap-6">
         <!--item1-->
-        <div class="card card-side p-5 bg-white w-[98%] h-[218px] shadow-xl">
-          <figure><img src="./Images/5.png" alt=""/></figure>
+        <div class="card card-side p-5 bg-white w-[98%] lg:h-[218px] h-72 shadow-xl">
+          <figure><img src="./Images/5.png" alt="" /></figure>
         <div class="card-body">
           <div class="flex justify-center items-center ">
             <i class="fa-solid text-amber-400 fa-star"></i>
@@ -197,7 +200,7 @@
         </div>
       </div>
       <!--item2-->
-      <div class="card card-side p-5 bg-white w-[98%] h-[218px] shadow-xl">
+      <div class="card card-side p-5 bg-white w-[98%] lg:h-[218px] h-72 shadow-xl">
         <figure><img src="./Images/6.png" alt=""/></figure>
       <div class="card-body">
         <div class="flex justify-center items-center ">
@@ -220,7 +223,7 @@
       </div>
     </div>
     <!--item3-->
-    <div class="card card-side p-5 bg-white w-[98%] h-[218px] shadow-xl">
+    <div class="card card-side p-5 bg-white w-[98%] lg:h-[218px] h-72 shadow-xl">
       <figure><img src="./Images/7.png" alt=""/></figure>
     <div class="card-body">
       <div class="flex justify-center items-center ">
@@ -243,7 +246,7 @@
     </div>
   </div>
   <!--item4-->
-  <div class="card card-side p-5 bg-white w-[98%] h-[218px] shadow-xl">
+  <div class="card card-side p-5 bg-white w-[98%] lg:h-[218px] h-72 shadow-xl">
     <figure><img src="./Images/8.png" alt=""/></figure>
   <div class="card-body">
     <div class="flex justify-center items-center ">
@@ -266,7 +269,7 @@
   </div>
 </div>
 <!--item5-->
-<div class="card card-side p-5 bg-white w-[98%] h-[218px] shadow-xl">
+<div class="card card-side p-5 bg-white w-[98%] lg:h-[218px] h-72 shadow-xl">
   <figure><img src="./Images/9.png" alt=""/></figure>
 <div class="card-body">
   <div class="flex justify-center items-center ">
@@ -289,7 +292,7 @@
 </div>
 </div>
 <!--item6-->
-<div class="card card-side p-5 bg-white w-[98%] h-[218px] shadow-xl">
+<div class="card card-side p-5 bg-white w-[98%] lg:h-[218px] h-72 shadow-xl">
   <figure><img src="./Images/10.png" alt=""/></figure>
 <div class="card-body">
   <div class="flex justify-center items-center ">
@@ -316,7 +319,7 @@
     </section>
     <section>
       <div>
-        <div class="hero mt-24 bg-white">
+        <div class="hero lg:mt-24 bg-white">
           <div class="hero-content text-center">
             <div class="max-w-md">
               <h1 class="text-4xl font-bold text-gray-700">Related Question</h1>
@@ -326,8 +329,8 @@
         </div>
       </div>
       <!--question answer-->
-      <div class="flex justify-center py-8 px-32">
-      <div class="w-[441px] h-[470px]  px-8">
+      <div class="lg:flex justify-center py-8 px-4 lg:px-32">
+      <div class="lg:w-[441px] lg:h-[470px]  px-8">
         <img src="./Images/11.png" alt="">
       </div>
       <div class="flex-col">
@@ -380,8 +383,8 @@
       </div>
     </section>
     <!--contact-->
-    <section class="px-32 ">
-      <div class="hero  mt-24 bg-white">
+    <section class="lg:px-32 px-4">
+      <div class="hero lg:mt-24 bg-white">
         <div class="hero-content text-center">
           <div class="max-w-md">
             <h1 class="text-4xl font-bold text-gray-700">Contact Form</h1>
@@ -468,7 +471,7 @@
     </section>
     <!--social-->
     <section>
-      <div class=" px-32  ">
+      <div class=" lg:px-32 px-4 pb-4 ">
           <nav class="pb-3 bg-gray-100 text-center rounded-xl">
             <h1 class="text-4xl font-bold text-gray-700">Social</h1>
             <div class=" mt-4 flex justify-around">
@@ -479,7 +482,7 @@
     </section>
   </main>
   <!--footer -->
-    <footer class="footer px-32 py-32 bg-base-200 mt-24 ">
+    <footer class="footer px-32 py-32 bg-base-200 lg:mt-24 ">
       <aside class="">
         <h2 class="font-bold text-2xl text-white">Get In Touch</h2>
         <p>The biggest prize  and the most cherished <br> victory in hockey alongside the Olympics.</p>
